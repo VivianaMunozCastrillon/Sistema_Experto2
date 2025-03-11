@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Experto Odontológico</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema experto para apoyo al diagnostico y tratamiento de las enfermadades de los dientes y otras manifestaciones orales</h1>
+    </header> 
+    
+    <section id="intro">
+        <div class="intro-content">
+            <img src="imagenes/Dientes.png" alt="Odontología" class="background-image">
+            <div class="text-container">
+                <h2>Bienvenido</h2>
+                <p>
+                    Este sistema ha sido desarrollado para asistir a los odontólogos en la identificación y diagnóstico de enfermedades dentales 
+                    y patologías orales. A través de una serie de preguntas estructuradas basadas en el análisis clínico y radiográfico, el sistema 
+                    facilita una evaluación precisa que respalde la toma de decisiones en la práctica odontológica.
+                </p>
+                <p><strong>¿Cómo funciona?</strong></p>
+                <ol>
+                    <li><strong>Evaluación Inicial:</strong> Realiza un odontograma y/o radiografía del paciente.</li>
+                    <li><strong>Proceso de Diagnóstico:</strong> Responde preguntas basadas en la evaluación clínica.</li>
+                    <li><strong>Resultados y Recomendaciones:</strong> Obtén las causas y tratamiento al diagnostico.</li>
+                </ol>
+               
+                
+                <button id="comenzarDiagnostico">Comenzar Diagnóstico</button>
+                <script>
+                    document.getElementById("comenzarDiagnostico").addEventListener("click", function () {
+                        window.open("diagnostico.html", "_blank"); // Abre el diagnóstico en una nueva pestaña
+                    });
+                </script>
+                
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="ayuda" class="hidden">
+        <h2>Ayuda</h2>
+        <p>Para utilizar el sistema experto, siga estos pasos:</p>
+        <ul>
+            <li>🦷 Asegúrese de contar con un odontograma y/o radiografía.</li>
+            <li>✍️ Responda las preguntas según sus observaciones clínicas.</li>
+            <li>📋 Revise el diagnóstico preliminar y utilícelo como apoyo.</li>
+        </ul>
+    </section>
+    
+    <script src="Script.js"></script>
+</body>
+</html>
