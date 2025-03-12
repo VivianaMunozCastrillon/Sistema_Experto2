@@ -12,8 +12,8 @@ header {
     background: #0b71b6;
     color: white;
     text-align: center;
-    padding: 4px;
-    font-size: 10px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 /* Sección de Introducción */
@@ -25,14 +25,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .intro-content {
     position: relative;
     width: 100%;
-    height: auto;
+    max-width: 1200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -45,8 +47,8 @@ header {
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Hace que la imagen cubra toda la pantalla */
-    z-index: -1; /* Manda la imagen al fondo */
+    object-fit: cover;
+    z-index: -1;
     opacity: 0.3;
 }
 
@@ -97,3 +99,45 @@ button:hover {
     display: none;
 }
 
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #intro {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .text-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}

@@ -57,7 +57,7 @@ const diagnostico = {
             pregunta: "¿Se encuentra en la raíz del diente?",
             opciones: [
                 { texto: "Sí", resultado: "caries_radicular" },
-                { texto: "No", resultado: "diagnostico_diferencial" }
+                { texto: "No", resultado: "superficie_diente" }
             ]
         },
         dolor_morder: {
@@ -78,7 +78,7 @@ const diagnostico = {
             pregunta:"¿El paciente tiene sangrado gingival?",
             opciones: [
                 { texto: "Sí", siguiente: "movilidad_dental" },
-                { texto: "No", resultado: "albeolitis" }    
+                { texto: "No", resultado: "alveolitis" }    
             ]
         },
         movilidad_dental: {
@@ -121,7 +121,7 @@ const diagnostico = {
         dolor_inflamacion:{
             pregunta:"¿Tiene dolor en el area o inflamación?",
             opciones:[
-                { texto: "Sí", resultado: "abceso_periodontal" },
+                { texto: "Sí", resultado: "absceso_periodontal" },
                 { texto: "No", resultado: "quiste_maxilares" }
 
             ]    
@@ -129,7 +129,7 @@ const diagnostico = {
         percusión_positiva:{
             pregunta:"¿El diente presenta percusión positiva horizontal y vertical?",
             opciones: [
-                { texto: "Sí", resultado: "concusión_dental" },
+                { texto: "Sí", resultado: "concusion_dental" },
                 { texto: "No", resultado: "hipercementosis" }
             ]
         },
@@ -221,7 +221,8 @@ const resultados = {
         ],
     },
 
-    diagnostico_diferencial: "Reevaluar en otras superficies del diente.",
+    diagnostico_diferencial: "Realizar diagnostico diferencial de otras pegmentaciones en la corona",
+    superficie_diente: "Reevaluar en otras superficies del diente.",
 
     caries_incipiente: {
         titulo: "Caries incipiente o superficial",
@@ -282,8 +283,9 @@ const resultados = {
             
         ]
     },
-    albeolitis:{
-        titulo: "Albeolitis",
+    alveolitis:{
+        titulo: "Alveolitis",
+        imagen: "./imagenes/alveolitis.jpg",
         causas: [
             "Lesión de alvéolo después de extracción dental.",
             "Infección bacteriana.",
@@ -298,6 +300,7 @@ const resultados = {
     },
     gingivitis:{
         titulo: "Gingivitis",
+        imagen: "./imagenes/gingivitis.jpeg",
         causas: [
             "Mala higiene oral.",
             "Depósitos de cálculos a nivel supra o subgingival.",
@@ -311,6 +314,7 @@ const resultados = {
     },
     periodontitis_avanzada:{
         titulo: "Periodontitis Avanzada",
+        imagen: "./imagenes/periodontitis_avanzada.jpeg",
         causas: [
             "Mala higiene oral.",
             "Bolsas periodontales profundas.",
@@ -325,6 +329,7 @@ const resultados = {
     },
     periodontitis_moderada:{
         titulo: "Periodontitis Moderada",
+        imagen: "./imagenes/periodontitis_moderada.jpg",
         causas: [
             "Mala higiene oral.",
             "Osteoporosis.",
@@ -338,7 +343,8 @@ const resultados = {
         ]
     },
     pericoronitis:{
-        titulo: "Pericoronitis",
+        titulo: "pericoronaritis",
+        imagen: "./imagenes/pericoronaritis.jpg",
         causas: [
             "Mala higiene oral.",
             "Impactación de un tercer molar.",
@@ -356,6 +362,7 @@ const resultados = {
     },
     concusion_dental:{
         titulo: "concusión Dental",
+        imagen: "./imagenes/concusion_dental.jpg",
         causas: [
             "Traumatismo dental que afecta las estructuras o soportes del diente."
         ],
@@ -370,6 +377,7 @@ const resultados = {
     },
     hipercementosis:{
         titulo: "Hipercementosis",
+        imagen: "./imagenes/hipercementosis.png",
         causas: [
             "Inflamación periapical.",
             "Reparación dental a un trauma.",
@@ -381,6 +389,7 @@ const resultados = {
     },
     contactos_prematuros:{
         titulo: "Contactos Prematuros",
+        imagen: "./imagenes/contactos_prematuros.jpg",
         causas: [
             "Mordidas desequilibradas.",
             "Maloclusiones dentarias.",
@@ -395,6 +404,7 @@ const resultados = {
     },
     absceso_periodontal:{
         titulo: "Absceso Periodontal",
+        imagen: "./imagenes/abceso_peridontal.png",
         causas: [
             "Acumulación de bacterias en las bolsas periodontales.",
             "Impactación de cuerpos extraños en las bolsas periodontales."
@@ -406,6 +416,7 @@ const resultados = {
     },
     intrusion_dental:{
         titulo: "Intrusión Dental",
+        imagen: "./imagenes/intrusion_dental.png",
         causas: [
             "Desplazamiento del diente hacia la encía y el hueso por un traumatismo."
         ],
@@ -416,6 +427,7 @@ const resultados = {
     },
     dilaceración:{
         titulo: "Dilaceración",
+        imagen: "./imagenes/dilaceracion.png",
         causas: [
             "Trauma sufrido durante la formación del diente."
         ],
@@ -430,6 +442,7 @@ const resultados = {
     },
     neuralgia:{
         titulo: "Neuralgia",
+        imagen: "./imagenes/neuralgia.jpeg",
         causas: [
             "Lesiones o afecciones que dañan los nervios.",
             "Vasos sanguíneos que comprimen el nervio",
@@ -444,6 +457,7 @@ const resultados = {
     },
     pulpitis_reversible:{
         titulo: "Pulpitis Reversible",
+        imagen: "./imagenes/pulpitis_reversible.jpg",
         causas: [
             "Iatrogenia por mala praxis odontológica.",
             "Obturaciones desadaptadas sin caries que llevan a una inflamación reversible de la pulpa."
@@ -456,6 +470,7 @@ const resultados = {
     },
     reabsorción_radicular:{
         titulo: "Reabsorción Radicular",
+        imagen: "./imagenes/reabsorcion_radicular.jpg",
         causas: [
             "Inflamación periapical.",
             "Quistes.",
@@ -470,6 +485,7 @@ const resultados = {
     },
     anquilosis_dental:{
         titulo: "Anquilosis Dental",
+        imagen: "./imagenes/anquilosis_dental.jpg",
         causas: [
             "Destrucción del ligamento periodontal por traumatismos dentales, factores genéticos o procesos infecciosos que hayan afectado el sistema de sostén del diente."
         ],
@@ -480,7 +496,8 @@ const resultados = {
         ]
     },
     luxación_dental:{
-        titulo: "Luxación Dental",
+        titulo: "Luxación Intrusiva",
+        imagen: "./imagenes/luxacion_dental.jpg",
         causas: [
             "Traumatismo a causa de un golpe intenso."
         ],
@@ -491,19 +508,9 @@ const resultados = {
             "Si en los controles posteriores no hay vitalidad pulpar, se debe llegar a un tratamiento de endodoncia."
         ]
     },
-    abceso_periodontal:{
-        titulo: "Abceso Periodontal",
-        causas: [
-            "Acumulación de bacterias en las bolsas periodontales.",
-            "Impactación de cuerpos extraños en las bolsas periodontales."
-        ],
-        tratamiento: [
-            "Drenaje del acceso (Corte pequeño para el drenaje del pus), ocasionalmente colocar un drenaje de goma para mantener el área de pus abierta.",
-            "Antibioterapia, analgésicos y enjuagues bucales con agua tibia y sal para calmar el dolor."
-        ]
-    },
     quiste_maxilares:{
         titulo: "Quiste de los maxilares avanzado",
+        imagen: "./imagenes/quiste_maxilares.jpeg",
         causas: [
             "Origen dentario ya sea por la infección crónica de un diente.",
             "Quistes odontogénicos."
@@ -614,12 +621,14 @@ function mostrarResultado(resultadoClave) {
         resultadoContainer.innerHTML += `
             <div class="reiniciar-container">
                 <h3>${reiniciar.pregunta}</h3>
-                <button onclick="window.open('Index.html', '_blank')">Sí</button>
+                <button onclick="mostrarPregunta(diagnostico)">Sí</button>
                 <button onclick="mensajeGracias()">No</button>
             </div>
         `;
     }, 1000);
 }
+//<button onclick="window.open('Index.html', '_blank')">Sí</button>
+               
 
 // Función que muestra un mensaje de despedida si el usuario no quiere reiniciar
 function mensajeGracias() {
