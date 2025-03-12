@@ -627,7 +627,7 @@ function mostrarResultado(resultadoClave) {
         `;
     }, 1000);
 }
-//<button onclick="window.open('Index.html', '_blank')">Sí</button>
+//<button onclick="window.open('index.html', '_blank')">Sí</button>
                
 
 // Función que muestra un mensaje de despedida si el usuario no quiere reiniciar
