@@ -32,24 +32,14 @@
                 <button id="comenzarDiagnostico">Comenzar Diagnóstico</button>
                 <script>
                     document.getElementById("comenzarDiagnostico").addEventListener("click", function () {
-                        window.open("diagnostico.html", "_blank"); // Abre el diagnóstico en una nueva pestaña
+                        window.location.href = "diagnostico.html"; // Abre el diagnóstico en la misma pestaña
+
                     });
                 </script>
                 
 
             </div>
         </div>
-    </section>
-
-    
-    <section id="ayuda" class="hidden">
-        <h2>Ayuda</h2>
-        <p>Para utilizar el sistema experto, siga estos pasos:</p>
-        <ul>
-            <li>🦷 Asegúrese de contar con un odontograma y/o radiografía.</li>
-            <li>✍️ Responda las preguntas según sus observaciones clínicas.</li>
-            <li>📋 Revise el diagnóstico preliminar y utilícelo como apoyo.</li>
-        </ul>
     </section>
     
     <script src="Script.js"></script>

@@ -621,14 +621,14 @@ function mostrarResultado(resultadoClave) {
         resultadoContainer.innerHTML += `
             <div class="reiniciar-container">
                 <h3>${reiniciar.pregunta}</h3>
-                <button onclick="window.open('index.html', '_blank')">Sí</button>
+                <button onclick="window.location.href = 'index.html'">Sí</button>
                 <button onclick="mensajeGracias()">No</button>
             </div>
         `;
     }, 1000);
 }
 //<button onclick="mostrarPregunta(diagnostico)">Sí</button>
-               
+           
 
 // Función que muestra un mensaje de despedida si el usuario no quiere reiniciar
 function mensajeGracias() {
