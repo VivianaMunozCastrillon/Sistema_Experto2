@@ -119,7 +119,7 @@ const diagnostico = {
             ]    
         },
         dolor_inflamacion:{
-            pregunta:"¿Tiene dolor en el area o inflamación?",
+            pregunta:"¿Tiene dolor en el área o inflamación?",
             opciones:[
                 { texto: "Sí", resultado: "absceso_periodontal" },
                 { texto: "No", resultado: "quiste_maxilares" }
@@ -269,7 +269,7 @@ const resultados = {
         ]
     },
     caries_rampante: {
-        titulo: "Caries Rampante o de biberon",
+        titulo: "Caries Rampante o de biberón",
         imagen: "./imagenes/cariesRampante.jpg",
         causas: [
             "Higiene bucal deficiente.",
@@ -343,7 +343,7 @@ const resultados = {
         ]
     },
     pericoronitis:{
-        titulo: "pericoronaritis",
+        titulo: "Pericoronitis",
         imagen: "./imagenes/pericoronaritis.jpg",
         causas: [
             "Mala higiene oral.",
@@ -469,7 +469,7 @@ const resultados = {
         ]
     },
     reabsorción_radicular:{
-        titulo: "Reabsorción Radicular",
+        titulo: "Reabsorción Radicular externa",
         imagen: "./imagenes/reabsorcion_radicular.jpg",
         causas: [
             "Inflamación periapical.",
